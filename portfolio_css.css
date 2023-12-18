@@ -1,59 +1,161 @@
 /* Reset some default styles for better consistency across browsers */
 body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a basic style to the body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8; /* Lighter background */
+  color: #444;
+  margin: 0; /* Remove default body margin */
+  width: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db; /* Adjust color as needed */
+  color: #fff; /* Adjust text color as needed */
+  padding: 10px;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Adjust link color as needed */
+  font-weight: bold;
+}
+
+
+header h1 {
+  margin: 0;
+}
+
+
+
+
+
+
+/* Style the main content section */
+section {
+  padding: 20px;
+  margin-top: 80px; /* Adjust margin-top to make space for the fixed header */
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+   /* Fixed positioning for the footer */
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* Style for the text inside the footer */
+footer p {
+  margin: 0;
+  color: #e6e6e6;
+  font-size: 14px;
+}
+
+/* Style for the links */
+footer a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+/* Style for the links on hover */
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Add additional styles for your specific content and layout */
+
+/* Your existing styles for header go here */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 150px; /* Adjust the width as needed */
+  border-radius: 50%; /* Creates a circular image, adjust as needed */
+  margin-right: 20px; /* Adjust spacing between image and text */
+}
+
+.about-text {
+  max-width: 600px; /* Adjust the maximum width of the text container */
+}
+
+/* Your existing styles for nav, ul, li, a, section, etc., go here */
+
+/* Add this CSS for the card styling */
+#home {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the maximum height as needed */
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Add your existing styles here */
+
+/* Media query for screens smaller than or equal to 600 pixels */
+@media screen and (max-width: 600px) {
+  section#home {
+    display: flex;
+    flex-direction: column;
   }
-  
-  /* Apply a basic style to the body */
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+
+  .card {
+    /* Make each card take the full width */
+    margin-bottom: 10px; /* Add some space between the cards */
+
+    /* Set a minimum width for each card */
+    min-width: calc(50% - 10px); /* Adjust the minimum width as needed */
   }
-  
-  /* Style the header */
-  header {
-    background-color: #0077cc;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  /* Style the navigation menu */
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  /* Style the main content section */
-  section {
-    padding: 20px;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Add additional styles for your specific content and layout */
-  
+}
