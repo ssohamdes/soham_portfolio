@@ -39,15 +39,9 @@ nav a {
   font-weight: bold;
 }
 
-
 header h1 {
   margin: 0;
 }
-
-
-
-
-
 
 /* Style the main content section */
 section {
@@ -61,12 +55,10 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-   /* Fixed positioning for the footer */
+  /* Fixed positioning for the footer */
   bottom: 0;
   width: 100%;
 }
-
-
 
 /* Style for the text inside the footer */
 footer p {
@@ -86,15 +78,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
-/* Add additional styles for your specific content and layout */
-
 /* Your existing styles for header go here */
 
 .about-section {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 .profile-image {
